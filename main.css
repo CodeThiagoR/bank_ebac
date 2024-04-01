@@ -20,10 +20,46 @@ body {
     background-color: lightslategrey;
 }
 
-.container form {
-    margin: 10px;
+input, textarea, button {
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    resize: none;
 }
 
-.container button {
-    height: 25px;
+button {
+    background-color: blue;
+    border: none;
+    text-transform: uppercase; 
+    color: yellow;
+    font-weight: bold; 
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(16, 15, 92);
+}
+
+.success-message {
+    background-color: blue;
+    padding: 16px;
+    color: white;
+}
+
+.error-message {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    display: none;
+}
+
+input.error {
+    color: red;
+    border-color: red;
+    outline-color: red;
 }
